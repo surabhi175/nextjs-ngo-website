@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Navbanner from './navbanner';
 import Navbar from './navbar';
 import Footer from './footer';
+import Image from 'next/image'
 
 class Contact extends Component{
     userData;
@@ -58,7 +59,7 @@ class Contact extends Component{
         }
     }
 
-    componentWillUpdate = (nextProps, nextState) => {
+    UNSAFE_componentWillUpdate = (nextProps, nextState) => {
         localStorage.setItem('user', JSON.stringify(nextState));
     }
     
@@ -75,7 +76,7 @@ class Contact extends Component{
                     <p style={{textAlign:"center", color: "white", fontWeight:"bold", fontSize:"2.2em"}}>CONTACT</p>
                     <div className={styles.sub}>
                         <div className={styles.col1}>
-                            <img src="https://image.freepik.com/free-vector/freelancer-working-laptop-her-house_1150-35048.jpg" />
+                            <Image height="560%" width="560%" alt="phone image" src="https://image.freepik.com/free-vector/freelancer-working-laptop-her-house_1150-35048.jpg" />
                         </div>
                         <div className={styles.col2}>
                             <h2>WRITE TO US</h2>
@@ -85,26 +86,25 @@ class Contact extends Component{
                                 name="name"
                                 value={this.state.name}
                                 onChange={this.handleInputs}
-                                placeholder="Full name"
-                                style={{ height:"27px"}}/>
+                                placeholder="Full name"/>
                                 <br /><br />
                                 
-                                <input className={styles.ip} style={{paddingLeft:"10px", fontFamily:"sans-serif"}}
+                                <input className={styles.ip} style={{paddingLeft:"10px", fontFamily:"sans-serif", height:"27px"}}
                                 type="text" id="email"
                                 name="email"
                                 value={this.state.email}
                                 onChange={this.handleInputs}
                                 placeholder="Email address"                            
-                                style={{height:"27px"}}/>
+                                />
                                 <br /><br />
     
-                                <input className={styles.ip} style={{paddingLeft:"10px",outline:"none", fontFamily:"sans-serif"}}
+                                <input className={styles.ip} style={{paddingLeft:"10px",outline:"none", fontFamily:"sans-serif",height:"27px"}}
                                 type="text" id="phone"
                                 name="phone"
                                 value={this.state.phone}
                                 onChange={this.handleInputs}
                                 placeholder="Phone"       
-                                style={{height:"27px"}}/>
+                                />
                                 <br /><br />
     
                                 <textarea style={{paddingLeft:"10px",outline:"maroon", marginTop:"5px", fontFamily:"sans-serif"}}
