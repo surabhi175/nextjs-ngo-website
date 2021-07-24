@@ -1,0 +1,251 @@
+.abt{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center; 
+}
+
+/* body{
+    background-color: rgb(247, 240, 252);
+} */
+
+.abt img{
+    margin-top: 0px;
+    background-blend-mode:hard-light;
+    /* width: 31%;
+    height: 45vh; */
+}
+
+@media screen and (max-width: 600px){
+    .abt img{
+        width:100%;
+    }
+}
+
+.abtus{
+    border-right: 1px solid gray;
+    width: 74%;
+    margin-bottom: 15px;
+}
+
+.intro{
+    background-color: rgb(247, 240, 252);
+}
+
+.introp{
+    
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: come 500ms linear 0s 1;
+}
+
+@keyframes come {
+    from{width: 90%;}
+    to{width: 100%;}
+}
+
+.purpose{
+    /* style={{marginRight:"35px", marginLeft:"7%", width:"26%",
+         marginTop:"2%", display:"flex", alignItems:"center", fontFamily:"moz-initial", fontSize:"large"}} */
+    margin-right: 35px;
+    margin-left: 7%;
+    margin-top: 2%;
+    width: 26%;
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+@media screen and (max-width:730px) {
+    .purpose{
+        margin-right: 15px;
+        margin-left: 1%;
+        margin-top: 2%;
+        width: 26%;
+        display: flex;
+        align-items: center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .purpose{
+        display: none;
+    }
+
+    .abtus{
+        border-right: none;
+        width: 100vw;
+    }
+}
+
+.founders h2{
+    width: 100vw;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 1s steps(60, end);
+}
+
+@keyframes type{ 
+    from { width: 0; } 
+  }
+
+.row1{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 10px;
+    padding-left:35px;
+    height: 460px;
+}
+
+@media screen and (max-width:990px){
+    .subcol2{
+        width:0%;
+        display: none;
+    }
+
+    .subcol3{
+        width:0%;
+        display: none;
+    }
+
+    .subcol1{
+        width:100% !important;
+    }
+
+    .subcol4{
+        width:100% !important;
+        padding-left: 6% !important;
+    }
+   
+}
+
+@media screen and (max-width:600px){
+    .subcol1{
+        background-color: white !important;
+    }
+    .subcol4{
+        background-color: white !important;
+    }
+}
+
+.row2{
+    display: flex;
+    flex-flow: row wrap;
+    padding-right:35px;
+    height: 480px;
+    margin-bottom: 10px;
+}
+
+.subcol1{
+    background-color: rgb(227, 185, 247);
+    clip-path: polygon(0 15%, 85% 15%, 93% 49%, 85% 85%, 0 85%);
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.subcol2{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+
+.subcol2 img{
+    margin-top: 20px;
+    margin-left: 40px;
+    align-self: center;
+    width: 82%;
+    height: 87%;
+}
+
+.subcol4{
+    background-color: rgb(227, 185, 247);
+    clip-path: polygon(15% 10%, 100% 10%, 100% 90%, 15% 90%, 4% 50%);
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    
+}
+
+.subcol3{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+
+.subcol3 img{
+    margin-top: 20px;
+    margin-left: 40px;
+    align-self: center;
+    width: 82%;
+    height: 87%;
+}
+
+.founders{
+    background-color: rgb(247, 240, 252);
+    width: 100%;
+}
+
+.cl1{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 30px;
+    
+}
+
+.cl1 img{
+    height: 170px;
+    width: 170px;
+    margin-top: 6%;
+    margin-left: 19%;
+    transition:  border-radius 500ms;
+}
+
+.cl1 img:hover{
+    /* height: 173px;
+    width: 173px; */
+    border-radius: 6% !important;
+    border: 7px solid rgb(2, 117, 102);
+    /* transform: rotate(360deg); */
+}
+
+.leader:hover{
+    color: rgb(43, 120, 236) !important;
+    text-decoration: underline !important;
+}
+
+.cl1 p{
+    margin-right:14%;
+    margin-left: 6%;
+}
+
+@media screen and (max-width:700px){
+    .cl1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7px;
+    }
+    .cl1 p{
+        text-align: center;
+        margin-left: 2%;
+        margin-right:1%;
+    }
+
+    .cl1 img{
+        margin-left: 0px;
+    }
+
+
+}

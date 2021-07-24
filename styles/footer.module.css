@@ -1,0 +1,25 @@
+.links a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.hdr{
+    font-weight: 400;
+    font-size: x-large;
+    color: rgb(167, 252, 118);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.btns:hover{
+    opacity: 0.7;
+}
+
+.lnk:hover {
+    background-color:rgb(134, 128, 128);
+    border-radius: 1%;
+}

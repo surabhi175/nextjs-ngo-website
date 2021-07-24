@@ -1,0 +1,56 @@
+.Container{
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    background-color: rgb(72, 3, 121);
+    align-items: center;
+    
+}
+
+.Container .mail{
+    color: whitesmoke;
+    margin-left: 30px;
+}
+
+.Container .mail a{
+    padding-left: 10px;
+}
+
+@media screen and (max-width:545px) {
+    .Container .mail{
+        display:none;
+    }
+}
+
+.banner{
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 7px;
+    
+}
+
+.lnk{
+    color: white;
+    margin-right: 15px;
+}
+
+.lnk0:hover{
+    color: rgb(49, 49, 218);
+    border-radius: 10%;
+}
+
+.lnk1:hover{
+    color: rgb(90, 203, 248);
+    border-radius: 10%;
+}
+
+.lnk2:hover{
+    color: rgb(230, 55, 186);
+    border-radius: 10%;
+}
+
+.lnk3:hover{
+    color: rgb(2, 131, 182);
+    border-radius: 10%;
+}
