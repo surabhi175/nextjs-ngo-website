@@ -81,7 +81,7 @@ class Contact extends Component{
                         <div className={styles.col2}>
                             <h2>WRITE TO US</h2>
                             <form onSubmit={this.onSubmit} >
-                                <input className={styles.ip} style={{paddingLeft:"10px", fontFamily:"sans-serif"}}
+                                <input className={styles.ip} style={{paddingLeft:"10px", fontFamily:"sans-serif", height:"27px"}}
                                 type="text" id="name"
                                 name="name"
                                 value={this.state.name}
