@@ -76,7 +76,7 @@ class Contact extends Component{
                     <p style={{textAlign:"center", color: "white", fontWeight:"bold", fontSize:"2.2em"}}>CONTACT</p>
                     <div className={styles.sub}>
                         <div className={styles.col1}>
-                            <Image height="560%" width="560%" alt="phone image" src="https://image.freepik.com/free-vector/freelancer-working-laptop-her-house_1150-35048.jpg" />
+                            <Image height="595%" width="560%" alt="phone image" src="https://image.freepik.com/free-vector/freelancer-working-laptop-her-house_1150-35048.jpg" />
                         </div>
                         <div className={styles.col2}>
                             <h2>WRITE TO US</h2>
@@ -113,7 +113,7 @@ class Contact extends Component{
                                 onChange={this.handleInputs}
                                 rows="8" placeholder="Leave a message">
                                 </textarea>
-                                <button className={styles.btn} type="submit">Submit</button> 
+                                <div className={styles.btnclass}><button  className={styles.btn}type="submit">Submit</button></div>
                             </form>
                         </div>
                     </div>

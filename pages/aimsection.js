@@ -19,7 +19,7 @@ function Aimsection() {
                 onjectPosition='center'
                 /> */}
             <div className={styles.container}>
-                <p >Helping mankind live sustainably.</p>
+                <p >We make the world a better place to live in.</p>
             </div>
         </div>
     )

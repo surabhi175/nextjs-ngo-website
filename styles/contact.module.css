@@ -104,3 +104,13 @@
 .btn:hover{
     background-color: rgb(224, 65, 37);
 }
+
+@media screen and (max-width:500px) {
+    .btnclass{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        margin-left: 48%;
+        /* margin-left: -7%; */
+    }
+}

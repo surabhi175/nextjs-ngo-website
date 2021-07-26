@@ -1,7 +1,7 @@
 .container{
     background-color:white;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.4);
     background-size: cover;
     background-blend-mode: screen;
     font-weight: bolder;
@@ -42,7 +42,7 @@
     justify-self: center;
     position: absolute;
     top: 30px;
-    font-size: 4.5em;
+    font-size: 4.1em;
     
     color:rgb(21, 80, 28);
     
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 650px){
     .container p {
-        font-size: 3.4em;
+        font-size: 3em;
         margin-left: 10px;
     }
 }
