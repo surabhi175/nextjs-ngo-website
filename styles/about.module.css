@@ -250,17 +250,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 7px;
+        /* padding: 7px; */
+        padding-right: 4px;
     }
     .cl1 p{
         text-align: center;
-        margin-left: 2%;
+        margin-left: 0%;
         margin-right:1%;
     }
-
-    .mage{
-        margin-left: 0px;
-    }
-
 
 }

@@ -30,33 +30,33 @@ const About = () => {
             
             <div className={styles.founders} >
                     <h2 className={styles.ldr}  style={{textAlign:"center", fontFamily:"serif", color:"darkblue",fontWeight:"900", marginBottom:"25px", marginTop:"70px"}}>MEET THE LEADERS</h2>
-                    <hr  style={{margin:"1% 46% 0% 47%", color:'gray',display:"do"}}/>
+                    
                     <div className={styles.members} >
                         <div className={styles.cl1} >
 
                             <div><Image className={styles.mage} width="170" height="170" alt="" src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/></div>
-                            <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "black", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
+                            <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "blue", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
                             <p>
                              aut nostrum explicabo reprehenderit optio. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
                             </p></div>
                         </div>
                         <div className={styles.cl1}>
                         <div><Image className={styles.mage} width="170" height="170" alt="" src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/></div>
-                        <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "black", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
+                        <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "blue", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
                         <p>
                         aut nostrum explicabo reprehenderit optio. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
                         </p></div>
                         </div>
                         <div className={styles.cl1}>
                             <div><Image className={styles.mage} width="170" height="170" alt="" src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/></div>
-                            <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "black", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
+                            <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "blue", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
                             <p>
                              aut nostrum explicabo reprehenderit optio. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
                             </p></div>
                         </div>
                         <div className={styles.cl1}>
                             <div><Image className={styles.mage} width="170" height="170" alt=""  src="https://images.unsplash.com/photo-1597223557154-721c1cecc4b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"/></div>
-                            <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "black", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
+                            <div><p className={styles.leader} style={{ fontWeight:"600", marginTop:"15px", fontFamily:"-moz-initial", fontSize:"1.5em",textShadow:"1px black" }}><i><a style={{color: "blue", textDecoration:"none"}} href="https://www.linkedin.com/">Lindsay McGonagall</a></i></p>
                             <p>
                              aut nostrum explicabo reprehenderit optio. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas.
                             </p></div>
