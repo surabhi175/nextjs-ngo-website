@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import styles from '../styles/contact.module.css'
 import Head from 'next/head'
 import Navbanner from './navbanner';
@@ -6,64 +6,49 @@ import Navbar from './navbar';
 import Footer from './footer';
 import Image from 'next/image'
 
-class Contact extends Component{
-    userData;
-    constructor(props){
-        super(props)
-        this.state={
-            name:"",
-            email:"",
-            state:"",
-            message:""
-        }
-        this.handleInputs = this.handleInputs.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-    }
+function Contact(){
+    const [input, setInput] = useState({
+        name:'',
+        email:'',
+        phone:'',
+        message:''
+    })
 
-    handleInputs(event){
-        this.setState({
-            [event.target.name] : event.target.value
+    function handleInputs(event){
+        const {name,value} = event.target;
+
+        setInput(prevInput => {
+            return{
+                ...prevInput,
+                [name]:value
+            }
         })
     }
-    
-    onSubmit(event) {
-        event.preventDefault();
+    const {name, email, phone, message} = input;
 
-        this.setState({
-            name:'',
-            email:'',
-            phone:'',
-            message:''
-        })
-        alert("Form data submitted.")
-        
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try{
+        const response = await fetch("https://v1.nocodeapi.com/surabhi175/google_sheets/gYrWKFlrPHcDPlbY?tabId=Sheet1" ,{
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify([[name, email, phone, message, new Date().toLocaleString()]]),
+            }
+        );
+        await response.json();
+        setInput({...input, name:"", email:"", phone:"", message:""});
+        alert('Response Submitted Successfully!')
+        } catch(err) {
+        console.log(err);
     }
+  }
+    // function handleClick(event){
+    //     event.preventDefault();
+    //     console.log(input);
+    // }
 
-    componentDidMount() {
-        this.userData = JSON.parse(localStorage.getItem('user'));
-
-        if(localStorage.getItem('user')){
-            this.setState({
-                name: this.userData.name,
-                email: this.userData.email,
-                phone: this.userData.phone,
-                message: this.userData.message
-            })
-        }else{
-            this.setState({
-                name:'',
-                email:'',
-                phone:'',
-                message:''
-            })
-        }
-    }
-
-    UNSAFE_componentWillUpdate = (nextProps, nextState) => {
-        localStorage.setItem('user', JSON.stringify(nextState));
-    }
-    
-        render(){
             return(
                 <>
                     <Head>
@@ -80,20 +65,20 @@ class Contact extends Component{
                         </div>
                         <div className={styles.col2}>
                             <h2>WRITE TO US</h2>
-                            <form onSubmit={this.onSubmit} >
+                            <form onSubmit={handleSubmit} >
                                 <input className={styles.ip} style={{paddingLeft:"10px", fontFamily:"sans-serif", height:"27px"}}
                                 type="text" id="name"
                                 name="name"
-                                value={this.state.name}
-                                onChange={this.handleInputs}
+                                value={input.name}
+                                onChange={handleInputs}
                                 placeholder="Full name"/>
                                 <br /><br />
                                 
                                 <input className={styles.ip} style={{paddingLeft:"10px", fontFamily:"sans-serif", height:"27px"}}
                                 type="text" id="email"
                                 name="email"
-                                value={this.state.email}
-                                onChange={this.handleInputs}
+                                value={input.email}
+                                onChange={handleInputs}
                                 placeholder="Email address"                            
                                 />
                                 <br /><br />
@@ -101,19 +86,19 @@ class Contact extends Component{
                                 <input className={styles.ip} style={{paddingLeft:"10px",outline:"none", fontFamily:"sans-serif",height:"27px"}}
                                 type="text" id="phone"
                                 name="phone"
-                                value={this.state.phone}
-                                onChange={this.handleInputs}
+                                value={input.phone}
+                                onChange={handleInputs}
                                 placeholder="Phone"       
                                 />
                                 <br /><br />
     
                                 <textarea style={{paddingLeft:"10px",outline:"maroon", marginTop:"5px", fontFamily:"sans-serif"}}
                                 name="message"
-                                value={this.state.message}
-                                onChange={this.handleInputs}
+                                value={input.message}
+                                onChange={handleInputs}
                                 rows="8" placeholder="Leave a message">
                                 </textarea>
-                                <div className={styles.btnclass}><button  className={styles.btn}type="submit">Submit</button></div>
+                                <div className={styles.btnclass}><button className={styles.btn} type="submit">Submit</button></div>
                             </form>
                         </div>
                     </div>
@@ -121,7 +106,7 @@ class Contact extends Component{
                 <Footer />
                 </>
             )
-        }
+        
 }
 
 
